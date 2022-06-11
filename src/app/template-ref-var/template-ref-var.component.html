@@ -1,0 +1,24 @@
+<!-- <p>template-ref-var works!</p> -->
+<br />
+<br />
+<div class="text-center">
+<h1>Template Reference Variable</h1>
+
+<input type="text" #input placeholder="Input">
+<br />
+<br />
+<button (click)="getValue(input.value)">Get Value</button>
+<br />
+<br />
+<button (click)="getValue(input.type)">Get Type</button>
+<br />
+<br />
+<button (click)="getValue(input.placeholder)">Get Placeholder</button>
+<br />
+<br />
+<b>Value: </b>{{input.value}}
+<br />
+<b>Type: </b>{{input.type}}
+<br />
+<b>Placeholder: </b>{{input.placeholder}}
+</div>

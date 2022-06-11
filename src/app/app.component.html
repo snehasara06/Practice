@@ -1,0 +1,75 @@
+
+
+
+<!-- <nav class="text-center  nav nav-tabs" >
+  <a href="#" class="nav-item nav-link active" routerLink="/temp-ref-var" routerLinkActive="active">Template Reference Variable</a>
+
+  <a  href="#" class="nav-item nav-link" routerLink="/comp-inter" routerLinkActive="active">Component Interaction</a>
+  
+  <a  href="#" class="nav-item nav-link" routerLink="/pipes" routerLinkActive="active">Pipes</a>
+
+ 
+</nav> -->
+
+
+<div class="bs-example">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+      <!-- <a href="#" class="navbar-brand">Brand</a> -->
+      
+      <div id="navbarCollapse" class="collapse navbar-collapse ">
+          <ul class="nav  navbar-nav mx-auto ">
+            <a href="#" class="nav-item nav-link active" routerLink="/temp-ref-var" routerLinkActive="active">Template Reference Variable</a>
+
+            <a  href="#" class="nav-item nav-link" routerLink="/pipes" routerLinkActive="active">Pipes</a>
+
+              <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Component Interaction</a>
+                  <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item"  routerLink="/@input" routerLinkActive="active">@Input</a>
+                      <a href="#" class="dropdown-item" routerLink="/@output" routerLinkActive="active">@Output</a>
+                      <a href="#" class="dropdown-item"  routerLink="/gettersetter" routerLinkActive="active">Setters and getters</a>
+                      <a href="#" class="dropdown-item" routerLink="/view-child" routerLinkActive="active">@ViewChild</a>
+                      <a href="#" class="dropdown-item" routerLink="/service" routerLinkActive="active">Services</a>
+
+
+                      <!-- <div class="dropdown-divider"></div>
+                      <a href="#"class="dropdown-item">Trash</a> -->
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>
+
+
+
+<!-- <h1>Template Reference Variable</h1>
+<app-template-ref-var></app-template-ref-var> -->
+
+<!-- <h1>Parent To child Interaction(@Input)</h1> -->
+<!-- <app-input [parentData]="name"></app-input> -->
+
+   <!-- <h1>Child to Parent Interaction(@Output)</h1> 
+<h2>{{message}}</h2>
+<app-output (childEvent)="message=$event" ></app-output> -->
+<!-- 
+<h1>Pipes</h1>
+<app-pipes></app-pipes> -->
+
+<!-- <h1>Custom Pipes</h1>
+<h2>Square Root:</h2>
+<b>Square Root of 50: </b>{{50|SquareRoot}} 
+ <br /> 
+<b>Square Root of 729: </b>{{729|SquareRoot}}
+<br />  -->
+<!-- <h3>{{30|personPipe:72}}</h3> -->
+<!-- {{person.city|personData:person.city}} --> 
+<!-- <br />
+<h2>Person data:</h2>
+{{person.city|personPipe:person.city}}
+<div [innerHTML]="person.city|personPipe:person.city"></div> -->
+
+<!-- <h1>View Child</h1>
+<app-view-child></app-view-child> -->
